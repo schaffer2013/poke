@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wildmon Safari</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="game-panel">
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Wildmon Safari game canvas"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <div class="overlay-card">
+          <h1>Wildmon Safari</h1>
+          <p>Explore the field, encounter wild animals, and build your team.</p>
+          <ul>
+            <li>Move: Arrow Keys / WASD</li>
+            <li>In battle: 1 Attack, 2 Capture, 3 Run</li>
+          </ul>
+          <button id="startButton">Start Adventure</button>
+        </div>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <h2>Adventure Log</h2>
+      <div id="log" class="log"></div>
+      <h3>Your Team</h3>
+      <ul id="team" class="team"></ul>
+      <p class="hint">Tip: Walk through dark grass for encounters. Capture 10 unique animals to win.</p>
+    </aside>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
